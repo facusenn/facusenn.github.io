@@ -4,6 +4,18 @@
 //   link:  URL del repo o demo (opcional)
 window.PROJECTS = [
   {
+    title: 'Errante — Reservas para estudio de tatuajes',
+    year: '2026',
+    description:
+      'Web completa para un estudio de tatuajes: portfolio con galería, presupuestador online ' +
+      'que calcula el estimado en vivo según tamaño y zona, agenda de turnos y panel de ' +
+      'administración (reservas, precios, fotos y export a Excel). Integración opcional con ' +
+      'WhatsApp y Google Calendar, modo claro/oscuro y empaquetado en Docker.',
+    tags: ['Python', 'Flask', 'SQLAlchemy', 'Docker'],
+    icon: 'web',
+    link: 'https://errante.ar',
+  },
+  {
     title: 'Dispositivo IoT para monitoreo de cultivos — Taltrast',
     year: 'En curso',
     description:
@@ -24,17 +36,6 @@ window.PROJECTS = [
       'un reporte de la vulnerabilidad y sus posibles mitigaciones.',
     tags: ['Python', 'Seguridad', 'Análisis de datos', 'APIs'],
     icon: 'shield',
-  },
-  {
-    title: 'Errante — Reservas para estudio de tatuajes',
-    year: '2026',
-    description:
-      'Web completa para un estudio de tatuajes: portfolio con galería, presupuestador online ' +
-      'que calcula el estimado en vivo según tamaño y zona, agenda de turnos y panel de ' +
-      'administración (reservas, precios, fotos y export a Excel). Integración opcional con ' +
-      'WhatsApp y Google Calendar, modo claro/oscuro y empaquetado en Docker.',
-    tags: ['Python', 'Flask', 'SQLAlchemy', 'Docker'],
-    icon: 'web',
   },
   {
     title: 'Hongomatic 2.0',

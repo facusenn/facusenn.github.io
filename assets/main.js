@@ -20,20 +20,25 @@
       var media = p.image
         ? '<img src="' + escapeHtml(p.image) + '" alt="" loading="lazy">'
         : '<svg viewBox="0 0 24 24" aria-hidden="true">' + (ICONS[p.icon] || ICONS.web) + '</svg>';
-      var title = p.link
-        ? '<a href="' + escapeHtml(p.link) + '" target="_blank" rel="noopener">' + escapeHtml(p.title) + '</a>'
-        : escapeHtml(p.title);
-      return (
-        '<li class="project">' +
-        '<div class="project__media">' + media + '</div>' +
-        '<div class="project__body">' +
-        '<h3>' + title + '</h3>' +
-        '<span class="project__year">' + escapeHtml(p.year) + '</span>' +
-        '<p>' + escapeHtml(p.description) + '</p>' +
+      var tags =
         '<ul class="project__tags">' +
         (p.tags || []).map(function (t) { return '<li>' + escapeHtml(t) + '</li>'; }).join('') +
-        '</ul></div></li>'
-      );
+        '</ul>';
+      var inner =
+        '<div class="project__media">' + media + '</div>' +
+        '<div class="project__body">' +
+        '<h3>' + escapeHtml(p.title) + (p.link ? ' <span class="project__arrow" aria-hidden="true">↗</span>' : '') + '</h3>' +
+        '<span class="project__year">' + escapeHtml(p.year) + '</span>' +
+        '<p>' + escapeHtml(p.description) + '</p>' + tags +
+        '</div>';
+      if (p.link) {
+        return (
+          '<li class="project project--link">' +
+          '<a class="project__link" href="' + escapeHtml(p.link) + '" target="_blank" rel="noopener">' +
+          inner + '</a></li>'
+        );
+      }
+      return '<li class="project">' + inner + '</li>';
     }).join('');
   }
 
