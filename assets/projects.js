@@ -14,6 +14,18 @@ window.PROJECTS = [
     icon: 'leaf',
   },
   {
+    title: 'Hallazgo de seguridad en sistema de premios — Samsung',
+    year: '2022',
+    description:
+      'Encontré una falla en un sistema de validación de códigos: una API devolvía si un SKU ' +
+      'existía o no, sin límites de consulta. Con Python analicé los datos de los códigos ya ' +
+      'conocidos para estimar qué caracteres eran más probables en cada posición y acotar el ' +
+      'espacio de búsqueda. El trabajo fue sobre todo de análisis de datos; lo documenté como ' +
+      'un reporte de la vulnerabilidad y sus posibles mitigaciones.',
+    tags: ['Python', 'Seguridad', 'Análisis de datos', 'APIs'],
+    icon: 'shield',
+  },
+  {
     title: 'Errante — Reservas para estudio de tatuajes',
     year: '2026',
     description:
