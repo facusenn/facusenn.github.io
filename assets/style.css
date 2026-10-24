@@ -151,10 +151,29 @@ h1, h2, h3 { color: var(--text-strong); line-height: 1.15; margin: 0; }
   background: var(--bg-alt); border: 1px solid var(--border); color: var(--muted);
 }
 
+/* Experience */
+.timeline { list-style: none; margin: 0; padding: 0 0 0 24px; border-left: 2px solid var(--border); max-width: 720px; }
+.timeline li { position: relative; padding: 0 0 32px; }
+.timeline li:last-child { padding-bottom: 0; }
+.timeline li::before {
+  content: ""; position: absolute; left: -31px; top: 6px;
+  width: 12px; height: 12px; border-radius: 50%;
+  background: var(--accent); box-shadow: 0 0 0 4px var(--bg);
+}
+.timeline__date { display: block; font-size: 14px; color: var(--muted); margin-bottom: 2px; }
+.timeline h3 { font-size: 19px; font-weight: 700; }
+.timeline__org { color: var(--accent); font-weight: 600; }
+.timeline p { margin: 6px 0 0; font-size: 15px; }
+
 /* About */
 .about { max-width: 680px; }
 .about p { margin: 0 0 16px; }
 .skills { list-style: none; padding: 0; margin: 24px 0 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.about__subtitle { font-size: 19px; font-weight: 700; margin: 36px 0 12px; }
+.education { list-style: none; margin: 0; padding: 0; }
+.education li { padding: 10px 0; border-bottom: 1px solid var(--border); }
+.education li:last-child { border-bottom: 0; }
+.education span { display: block; font-size: 14px; color: var(--muted); }
 
 /* Contact */
 .contact { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }

@@ -7,8 +7,8 @@
   <meta name="description" content="Portfolio de Facu: desarrollo web y proyectos de electrónica / IoT.">
   <meta property="og:title" content="Facu Senn">
   <meta property="og:description" content="Desarrollo web y proyectos de electrónica / IoT.">
-  <meta property="og:image" content="https://facusenn.github.io/assets/avatar.png">
-  <link rel="icon" href="assets/avatar.png">
+  <meta property="og:image" content="https://facusenn.github.io/assets/foto.jpg">
+  <link rel="icon" href="assets/foto.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
@@ -25,10 +25,11 @@
   <header class="header">
     <div class="container header__inner">
       <a class="logo" href="#inicio" aria-label="Inicio">
-        <img src="assets/avatar.png" alt="" width="44" height="44">
+        <img src="assets/foto.jpg" alt="" width="44" height="44">
       </a>
       <nav class="nav" id="nav">
         <a href="#inicio">Inicio</a>
+        <a href="#experiencia">Experiencia</a>
         <a href="#proyectos">Proyectos</a>
         <a href="#sobre-mi">Sobre mí</a>
         <a href="#contacto">Contacto</a>
@@ -50,18 +51,54 @@
       <div class="hero__text">
         <h1>Hola, soy <span class="accent">Facu</span></h1>
         <p>
-          Desarrollo <strong>aplicaciones web</strong> y <strong>proyectos de electrónica</strong>:
-          desde un sistema de reservas en Flask hasta sensores conectados con ESP32 y STM32.
-          Me gusta llevar una idea de la protoboard (o del editor) a algo que se use de verdad.
+          Soy <strong>técnico electrónico</strong> y programador de Rosario. Trabajo con electrónica
+          desde 2013: reparando equipos, diseñando circuitos y programando dispositivos.
+          Por mi cuenta también armo proyectos, algunos web y otros de hardware. Acá voy juntando lo que fui haciendo.
         </p>
         <div class="hero__cta">
-          <a class="btn" href="#contacto">Hablemos</a>
+          <a class="btn" href="#contacto">Contacto</a>
           <a class="btn btn--ghost" href="#proyectos">Ver proyectos</a>
         </div>
       </div>
       <div class="hero__image">
-        <img src="assets/avatar.png" alt="Avatar de Facu" width="240" height="240">
+        <img src="assets/foto.jpg" alt="Foto de Facundo Senn" width="240" height="240">
       </div>
+    </section>
+
+    <section class="section container" id="experiencia">
+      <h2 class="section__title">Experiencia</h2>
+      <ol class="timeline">
+        <li>
+          <span class="timeline__date">2025 – hoy</span>
+          <h3>Técnico <span class="timeline__org">· Funpark</span></h3>
+          <p>Reparación y mantenimiento preventivo de maquinaria, reparación de circuitos electrónicos y mantenimiento IT.</p>
+        </li>
+        <li>
+          <span class="timeline__date">2021 – hoy</span>
+          <h3>Programador <span class="timeline__org">· Taltrast</span></h3>
+          <p>Diseño y desarrollo de productos para el sector AgTech, de la idea a la producción: diseño de PCB y programación de los dispositivos.</p>
+        </li>
+        <li>
+          <span class="timeline__date">2024</span>
+          <h3>Data annotation specialist <span class="timeline__org">· Remotasks (Scale AI)</span></h3>
+          <p>Anotación de datos: categorización de imágenes, transcripción de texto y marcado de objetos en imágenes y video.</p>
+        </li>
+        <li>
+          <span class="timeline__date">2019</span>
+          <h3>Profesor <span class="timeline__org">· Colegio San José</span></h3>
+          <p>Curso sobre tecnologías 4.0. Supervisión y revisión de proyectos de diseño y prototipado de circuitos.</p>
+        </li>
+        <li>
+          <span class="timeline__date">2016 – 2021</span>
+          <h3>Especialista en electrónica <span class="timeline__org">· D2Laser</span></h3>
+          <p>Evaluación de factibilidad de proyectos, diseño de circuitos y máquinas, y mantenimiento de máquinas de manufactura aditiva y sustractiva.</p>
+        </li>
+        <li>
+          <span class="timeline__date">2013 – 2016</span>
+          <h3>Técnico reparador <span class="timeline__org">· RGD Electrónica</span></h3>
+          <p>Diagnóstico y reparación de equipos electrónicos de todo tipo.</p>
+        </li>
+      </ol>
     </section>
 
     <section class="section container" id="proyectos">
@@ -74,18 +111,23 @@
       <h2 class="section__title">Sobre mí</h2>
       <div class="about">
         <p>
-          Soy de Argentina. Trabajo en las dos puntas: el <strong>software</strong> que ve la gente
-          (Python, Flask, SQL, HTML/CSS/JS) y el <strong>hardware</strong> que mide el mundo real
-          (microcontroladores, sensores, comunicación por WiFi y GSM).
+          Soy de Argentina. Me gusta meter mano tanto en <strong>software</strong> (Python, Flask,
+          un poco de HTML/CSS/JS) como en <strong>hardware</strong> (microcontroladores y sensores).
         </p>
         <p>
-          Lo que más disfruto es resolver problemas concretos: que un estudio de tatuajes deje de
-          coordinar turnos a mano, que un cultivo de hongos avise cuando falta humedad, o que un
-          tanque de agua mande un SMS cuando se está vaciando.
+          Casi todo lo que hay acá salió de alguna necesidad puntual o de ganas de probar algo:
+          medir la humedad de un cultivo de hongos, saber cuánta agua queda en un tanque,
+          o armarle una web de turnos a un estudio de tatuajes. Voy aprendiendo sobre la marcha.
         </p>
         <ul class="skills">
-          <li>Python</li><li>Flask</li><li>SQLAlchemy</li><li>JavaScript</li><li>HTML / CSS</li>
-          <li>Docker</li><li>C++</li><li>Arduino / PlatformIO</li><li>ESP32</li><li>STM32</li><li>IoT</li>
+          <li>Sistemas embebidos</li><li>C++</li><li>Python</li><li>SQL</li><li>Flask</li>
+          <li>JavaScript</li><li>HTML / CSS</li><li>Docker</li><li>Arduino / PlatformIO</li>
+          <li>ESP32</li><li>STM32</li><li>IoT</li><li>Inglés C2</li>
+        </ul>
+        <h3 class="about__subtitle">Educación</h3>
+        <ul class="education">
+          <li><strong>Analista Universitario en Sistemas</strong> · Instituto Politécnico Superior <span>2026 – en curso</span></li>
+          <li><strong>Técnico Electrónico</strong> · Colegio San José N.º 8013 <span>2011 – 2017</span></li>
         </ul>
       </div>
     </section>
@@ -98,6 +140,10 @@
         <a class="social" href="https://github.com/facusenn" target="_blank" rel="noopener" aria-label="GitHub">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="none" d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"/></svg>
           <span>github.com/facusenn</span>
+        </a>
+        <a class="social" href="https://www.linkedin.com/in/facundo-senn" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="none" d="M20.4 2H3.6A1.6 1.6 0 0 0 2 3.6v16.8A1.6 1.6 0 0 0 3.6 22h16.8a1.6 1.6 0 0 0 1.6-1.6V3.6A1.6 1.6 0 0 0 20.4 2zM8 19H5V9.5h3V19zM6.5 8.2a1.7 1.7 0 1 1 0-3.5 1.7 1.7 0 0 1 0 3.5zM19 19h-3v-4.6c0-1.1 0-2.5-1.5-2.5s-1.8 1.2-1.8 2.4V19h-3V9.5h2.9v1.3c.4-.8 1.4-1.6 2.9-1.6 3.1 0 3.6 2 3.6 4.6V19z"/></svg>
+          <span>LinkedIn</span>
         </a>
       </div>
     </section>

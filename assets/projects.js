@@ -4,6 +4,16 @@
 //   link:  URL del repo o demo (opcional)
 window.PROJECTS = [
   {
+    title: 'Dispositivo IoT para monitoreo de cultivos — Taltrast',
+    year: 'En curso',
+    description:
+      'Diseño y programación de un dispositivo que controla humedad, temperatura e iluminación ' +
+      'en cultivos, con conectividad WiFi. Integración de sensores y automatización de procesos ' +
+      'para mejorar el rendimiento del cultivo.',
+    tags: ['C++', 'Sistemas embebidos', 'PCB', 'WiFi'],
+    icon: 'leaf',
+  },
+  {
     title: 'Errante — Reservas para estudio de tatuajes',
     year: '2026',
     description:
