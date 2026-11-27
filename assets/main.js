@@ -5,6 +5,9 @@
     leaf: '<path d="M5 19c0-8 5-14 15-15-1 10-7 15-15 15z"/><path d="M5 19l8-8"/>',
     water: '<path d="M12 3s6 7 6 11a6 6 0 0 1-12 0c0-4 6-11 6-11z"/>',
     shield: '<path d="M12 3l7 3v5c0 4.5-3 7.8-7 9-4-1.2-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/>',
+    trophy: '<path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4z"/><path d="M7 6H4a3 3 0 0 0 3 4M17 6h3a3 3 0 0 1-3 4"/>',
+    code: '<path d="M8 8l-4 4 4 4M16 8l4 4-4 4M13.5 5l-3 14"/>',
+    grid: '<rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 9.3h16M4 14.7h16M9.3 4v16M14.7 4v16"/>',
   };
 
   function escapeHtml(s) {
@@ -13,10 +16,10 @@
     });
   }
 
-  function renderProjects() {
-    var list = document.getElementById('projects-list');
-    if (!list || !window.PROJECTS) return;
-    list.innerHTML = window.PROJECTS.map(function (p) {
+  function renderList(listId, items) {
+    var list = document.getElementById(listId);
+    if (!list || !items) return;
+    list.innerHTML = items.map(function (p) {
       var media = p.image
         ? '<img src="' + escapeHtml(p.image) + '" alt="" loading="lazy">'
         : '<svg viewBox="0 0 24 24" aria-hidden="true">' + (ICONS[p.icon] || ICONS.web) + '</svg>';
@@ -70,7 +73,8 @@
   }
 
   document.getElementById('year').textContent = new Date().getFullYear();
-  renderProjects();
+  renderList('projects-list', window.PROJECTS);
+  renderList('hackathons-list', window.HACKATHONS);
   setupTheme();
   setupMenu();
 })();
