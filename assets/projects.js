@@ -19,12 +19,14 @@ window.PROJECTS = [
   },
   {
     title: 'Telemetría de tanque australiano y molino',
-    year: '2024',
+    year: '2023 – 2024',
     description:
-      'Equipo autónomo instalado en un campo sin red eléctrica para controlar el agua del ganado. ' +
-      'Mide el nivel del tanque australiano con un sensor de distancia láser VL53L0X y el ' +
-      'funcionamiento del molino que lo alimenta con sensores de efecto Hall. Envía los datos ' +
-      'por SMS e internet con un módulo SIM800L y se alimenta con paneles solares y baterías 18650. ' +
+      'Equipo autónomo para controlar el agua del ganado en un campo sin red eléctrica. ' +
+      'Empezó en 2023 como un medidor de nivel con sensor ultrasónico sobre STM32, que se ' +
+      'consultaba por SMS con un SIM800L y permitía autorizar números por mensaje. Con el uso, ' +
+      'el cliente necesitó más: en 2024 lo rediseñé con un sensor láser VL53L0X para una medición ' +
+      'más confiable, sensores de efecto Hall para monitorear el molino que llena el tanque, envío ' +
+      'de datos también por internet y alimentación con paneles solares y baterías 18650. ' +
       'Hoy está instalado y funcionando en el campo.',
     tags: ['C++', 'STM32', 'VL53L0X', 'SIM800L', 'Energía solar'],
     icon: 'water',
